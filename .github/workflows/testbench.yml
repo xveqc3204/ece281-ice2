@@ -16,8 +16,8 @@ jobs:
       - run: ghdl --version
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: ghdl analyze -v src/hdl/${TESTBENCH_ENTITY}.vhd
-      - run: ghdl analyze -v src/hdl/${TESTBENCH_ENTITY}_tb.vhd
+      - run: ghdl analyze -v src/${TESTBENCH_ENTITY}.vhd
+      - run: ghdl analyze -v src/${TESTBENCH_ENTITY}_tb.vhd
       - run: ls -R
       - run: ghdl elaborate -v ${TESTBENCH_ENTITY}_tb
       - run: ghdl run -v --assert-level=error ${TESTBENCH_ENTITY}_tb --stop-time=1us
