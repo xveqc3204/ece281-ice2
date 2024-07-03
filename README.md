@@ -4,7 +4,7 @@ Code for [ECE 281 ICE 2: Half-Adder](https://usafa-ece.github.io/ece281-book/ICE
 
 Targeted toward Digilent Basys3. Make sure to install the [board files](https://github.com/Xilinx/XilinxBoardStore/tree/2018.2/boards/Digilent/basys3).
 
-Tested on Windows 10/11.
+Tested on Windows 11 using Vivado 2024.
 
 ## GitHub Actions Testbench
 
